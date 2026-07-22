@@ -197,7 +197,7 @@ export function PreOrder() {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 50 }}
-              className="fixed bottom-8 right-8 z-40 max-w-sm w-[calc(100%-4rem)] pointer-events-auto"
+              className="fixed bottom-6 left-4 right-4 sm:left-auto sm:right-8 z-40 max-w-md sm:max-w-sm pointer-events-auto"
             >
               <div className="backdrop-blur-md bg-forest/95 border border-white/10 rounded-3xl p-5 shadow-2xl text-white flex flex-col gap-3">
                 <div className="flex justify-between items-center">

@@ -77,8 +77,8 @@ export function FloorMap({
         </div>
         
         {/* Responsive, scannable state counters */}
-        <div className="grid grid-cols-3 gap-2 sm:flex sm:items-center sm:gap-6 w-full md:w-auto mt-2 md:mt-0 col-span-2 md:col-span-1">
-          <div className="text-center sm:text-right border-r border-[#EAF4E4] pr-2 sm:pr-4">
+        <div className="flex flex-wrap items-center justify-start gap-x-4 gap-y-2 sm:flex-nowrap sm:gap-6 w-full md:w-auto mt-2 md:mt-0 col-span-2 md:col-span-1">
+          <div className="text-left border-r border-[#EAF4E4] pr-4">
             <span className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#5C9A42]">
               <span className="h-2 w-2 rounded-full bg-[#AAD08D]" />
               {stats.available} Available
@@ -86,7 +86,7 @@ export function FloorMap({
             <p className="text-[9px] text-[#1A2E1A]/50 font-semibold font-sans uppercase tracking-wider mt-0.5">Ready to Seat</p>
           </div>
 
-          <div className="text-center sm:text-right border-r border-[#EAF4E4] pr-2 sm:pr-4">
+          <div className="text-left border-r border-[#EAF4E4] pr-4">
             <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#1A2E1A]/70">
               <span className="h-2 w-2 rounded-full bg-neutral-300" />
               {stats.reserved} Reserved
@@ -94,7 +94,7 @@ export function FloorMap({
             <p className="text-[9px] text-[#1A2E1A]/50 font-semibold font-sans uppercase tracking-wider mt-0.5">Held Slots</p>
           </div>
 
-          <div className="text-center sm:text-right sm:border-r sm:border-[#EAF4E4] sm:pr-4">
+          <div className="text-left border-r border-[#EAF4E4] pr-4">
             <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#7FB565]">
               <span className="h-2 w-2 rounded-full bg-[#5C9A42] animate-pulse" />
               {stats.occupied} Seated
@@ -102,7 +102,7 @@ export function FloorMap({
             <p className="text-[9px] text-[#1A2E1A]/50 font-semibold font-sans uppercase tracking-wider mt-0.5">Dining Live</p>
           </div>
 
-          <div className="text-center sm:text-right border-r border-[#EAF4E4] sm:border-0 pr-2 sm:pr-0 mt-1 sm:mt-0">
+          <div className="text-left border-r border-[#EAF4E4] pr-4">
             <span className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-600">
               <span className="h-2 w-2 rounded-full bg-amber-400" />
               {stats.cleaning} Cleaning
@@ -110,7 +110,7 @@ export function FloorMap({
             <p className="text-[9px] text-[#1A2E1A]/50 font-semibold font-sans uppercase tracking-wider mt-0.5">Turnover</p>
           </div>
 
-          <div className="text-center sm:text-right mt-1 sm:mt-0">
+          <div className="text-left">
             <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-neutral-400">
               <span className="h-2 w-2 rounded-full bg-neutral-200" />
               {stats.blocked} Blocked

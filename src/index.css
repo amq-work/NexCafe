@@ -37,6 +37,7 @@
   --shadow-lift: 0 16px 48px rgba(47, 61, 42, 0.16);
 
   --max-width-content: 1440px;
+  --breakpoint-xs: 400px;
 }
 
 :root {
