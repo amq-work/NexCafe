@@ -921,7 +921,7 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
         =========================================
       */}
       <div 
-        className="lg:hidden w-full min-h-screen flex flex-col justify-between relative py-12 px-4 sm:px-8 bg-[#131B10] overflow-hidden z-10"
+        className="lg:hidden w-full min-h-screen flex flex-col justify-between relative py-6 px-4 sm:px-8 bg-[#131B10] overflow-hidden z-10"
       >
         {/* Ambient background for mobile */}
         <div 
@@ -936,47 +936,34 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
         <div className="absolute inset-0 bg-[#131B10]/90 pointer-events-none" />
 
         {/* Product Showcase */}
-        <div className="flex flex-col flex-1 justify-center py-6 gap-6 z-20 pt-16">
+        <div className="flex flex-col flex-1 justify-center py-2 gap-4 z-20 pt-14">
           
           {/* Headings Container (Stacked Absolutely to prevent layout shift and enable GSAP) */}
-          <div className="relative w-full h-[115px] xs:h-[140px] sm:h-[160px] flex items-center justify-center">
+          <div className="relative w-full h-[65px] xs:h-[80px] sm:h-[95px] flex items-center justify-center">
             <h1 ref={mobileHead0Ref} className="absolute inset-0 text-center px-4">
-              <span className="inline-block font-serif font-medium text-[26px] xs:text-[34px] sm:text-[44px] md:text-[50px] leading-[0.95] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'top center' }}>
+              <span className="inline-block font-serif font-medium text-[24px] xs:text-[30px] sm:text-[38px] md:text-[44px] leading-[0.95] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'top center' }}>
                 A Symphony of<br />Melting <span className="font-bold text-[#DCFFE5] drop-shadow-sm">Artistry</span>.
               </span>
             </h1>
             <h1 ref={mobileHead1Ref} className="absolute inset-0 text-center px-4">
-              <span className="inline-block font-serif font-medium text-[26px] xs:text-[34px] sm:text-[44px] md:text-[50px] leading-[0.95] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'top center' }}>
+              <span className="inline-block font-serif font-medium text-[24px] xs:text-[30px] sm:text-[38px] md:text-[44px] leading-[0.95] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'top center' }}>
                 Bold Flavors,<br />Elevated <span className="font-bold text-[#FFDCD3] drop-shadow-sm">Heritage</span>.
               </span>
             </h1>
             <h1 ref={mobileHead2Ref} className="absolute inset-0 text-center px-4">
-              <span className="inline-block font-serif font-medium text-[26px] xs:text-[34px] sm:text-[44px] md:text-[50px] leading-[0.95] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'top center' }}>
+              <span className="inline-block font-serif font-medium text-[24px] xs:text-[30px] sm:text-[38px] md:text-[44px] leading-[0.95] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'top center' }}>
                 Crisp & Golden,<br />Artisanal <span className="font-bold text-[#FFEED3] drop-shadow-sm">Tradition</span>.
               </span>
             </h1>
           </div>
 
-          {/* Subheadings Container (Stacked Absolutely to prevent layout shift and enable GSAP) */}
-          <div className="relative w-full h-[120px] xs:h-[100px] sm:h-[80px] flex items-center justify-center mt-2">
-            <p ref={mobileSub0Ref} className="absolute inset-0 font-sans font-light text-[13px] xs:text-[15px] sm:text-[18px] md:text-[20px] leading-relaxed text-cream-soft/90 text-center max-w-lg mx-auto px-4 sm:px-6">
-              Silky mozzarella meets rich garlic mayonnaise.<br /><span className="font-normal text-[#DCFFE5]">A warm, aromatic blend crafted to awaken your senses.</span>
-            </p>
-            <p ref={mobileSub1Ref} className="absolute inset-0 font-sans font-light text-[13px] xs:text-[15px] sm:text-[18px] md:text-[20px] leading-relaxed text-cream-soft/90 text-center max-w-lg mx-auto px-4 sm:px-6">
-              Glazed succulent quail basted in sweet, fiery sriracha.<br /><span className="font-normal text-[#FFDCD3]">Crisped to absolute perfection with deep, smoky undertones.</span>
-            </p>
-            <p ref={mobileSub2Ref} className="absolute inset-0 font-sans font-light text-[13px] xs:text-[15px] sm:text-[18px] md:text-[20px] leading-relaxed text-cream-soft/90 text-center max-w-lg mx-auto px-4 sm:px-6">
-              Premium non-alcoholic draft cold-brewed to gold standard.<br /><span className="font-normal text-[#FFEED3]">Perfectly paired with our double-smoked, crispy rib toast.</span>
-            </p>
-          </div>
-
           {/* Mobile CTA Button */}
-          <div className="relative z-30 flex justify-center mt-4 sm:mt-6">
+          <div className="relative z-30 flex justify-center mt-1 sm:mt-2">
             <Button
               variant="glass"
               size="sm"
               onClick={() => handleScrollTo('menu')}
-              className="px-6"
+              className="px-6 py-2.5"
             >
               <span>View Menu</span>
               <ArrowRight className="h-4 w-4 transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:translate-x-2" />
@@ -984,17 +971,17 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
           </div>
 
           {/* Floating graphic container */}
-          <div className="relative w-[280px] h-[280px] sm:w-[340px] sm:h-[340px] mx-auto my-6 flex items-center justify-center">
+          <div className="relative w-[230px] h-[230px] sm:w-[280px] sm:h-[280px] mx-auto my-2 flex items-center justify-center">
             {/* Premium Abstract Organic Composition with glowing effects for mobile */}
             <div 
               ref={mobileCircleRef}
-              className="absolute w-[220px] h-[220px] sm:w-[280px] sm:h-[280px] pointer-events-none select-none overflow-visible"
+              className="absolute w-[180px] h-[180px] sm:w-[230px] sm:h-[230px] pointer-events-none select-none overflow-visible"
               style={{ zIndex: 1 }}
             >
               {/* Overlapping mobile color glow zones */}
               <div 
                 ref={mobileGlow0Ref}
-                className="absolute inset-[-20px] rounded-full filter blur-[40px] mix-blend-screen pointer-events-none transition-opacity duration-1000"
+                className="absolute inset-[-15px] rounded-full filter blur-[30px] mix-blend-screen pointer-events-none transition-opacity duration-1000"
                 style={{
                   background: 'radial-gradient(circle, rgba(179, 187, 130, 0.6) 0%, transparent 70%)',
                   opacity: 0.75,
@@ -1002,7 +989,7 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
               />
               <div 
                 ref={mobileGlow1Ref}
-                className="absolute inset-[-20px] rounded-full filter blur-[40px] mix-blend-screen pointer-events-none transition-opacity duration-1000"
+                className="absolute inset-[-15px] rounded-full filter blur-[30px] mix-blend-screen pointer-events-none transition-opacity duration-1000"
                 style={{
                   background: 'radial-gradient(circle, rgba(214, 72, 59, 0.5) 0%, transparent 70%)',
                   opacity: 0,
@@ -1010,7 +997,7 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
               />
               <div 
                 ref={mobileGlow2Ref}
-                className="absolute inset-[-20px] rounded-full filter blur-[40px] mix-blend-screen pointer-events-none transition-opacity duration-1000"
+                className="absolute inset-[-15px] rounded-full filter blur-[30px] mix-blend-screen pointer-events-none transition-opacity duration-1000"
                 style={{
                   background: 'radial-gradient(circle, rgba(196, 151, 59, 0.5) 0%, transparent 70%)',
                   opacity: 0,
@@ -1020,7 +1007,7 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
               {/* Asymmetric Glassmorphic Blob */}
               <div 
                 ref={mobileBlobRef}
-                className="absolute inset-0 shadow-[inset_0_0_30px_rgba(255,255,255,0.15),0_15px_35px_rgba(0,0,0,0.45)] backdrop-blur-xl border border-white/15 overflow-hidden transition-all duration-700"
+                className="absolute inset-0 shadow-[inset_0_0_20px_rgba(255,255,255,0.15),0_10px_25px_rgba(0,0,0,0.45)] backdrop-blur-xl border border-white/15 overflow-hidden transition-all duration-700"
                 style={{
                   borderRadius: '42% 58% 70% 30% / 45% 45% 55% 55%',
                   background: 'linear-gradient(135deg, rgba(255,255,255,0.14) 0%, rgba(255,255,255,0.03) 100%)',
@@ -1038,7 +1025,7 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
               {/* Sculptural Double-Ring dashes */}
               <div 
                 ref={mobileStrokeRef}
-                className="absolute inset-[-8px] border border-white/10 rounded-[50%_40%_60%_50%_/_50%_60%_40%_50%] pointer-events-none transition-all duration-1000"
+                className="absolute inset-[-6px] border border-white/10 rounded-[50%_40%_60%_50%_/_50%_60%_40%_50%] pointer-events-none transition-all duration-1000"
                 style={{
                   borderWidth: '1.2px',
                   borderStyle: 'dashed',
@@ -1046,8 +1033,6 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
                 }}
               />
             </div>
-
-
 
             {/* Transparent Floating Plate Images (Concentric and floating with zIndex 5) */}
             <img 
@@ -1057,7 +1042,7 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
               className="absolute pointer-events-none select-none"
               referrerPolicy="no-referrer"
               style={{
-                width: '180px',
+                width: '145px',
                 height: 'auto',
                 transform: 'rotate(-22.76deg)',
                 zIndex: 5
@@ -1071,7 +1056,7 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
               className="absolute pointer-events-none select-none"
               referrerPolicy="no-referrer"
               style={{
-                width: '180px',
+                width: '145px',
                 height: 'auto',
                 transform: 'rotate(-22.76deg)',
                 zIndex: 5
@@ -1085,7 +1070,7 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
               className="absolute pointer-events-none select-none"
               referrerPolicy="no-referrer"
               style={{
-                width: '180px',
+                width: '145px',
                 height: 'auto',
                 transform: 'rotate(-22.76deg)',
                 zIndex: 5
@@ -1096,15 +1081,15 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
         </div>
 
         {/* Indicators at the bottom */}
-        <div className="w-[136px] bg-[#2c3d26]/50 rounded-[18px] py-[8px] px-[15px] mx-auto flex items-center justify-center z-25 mt-4">
-          <div className="flex flex-row items-center gap-[5px] w-[106px] h-[10px] justify-center">
+        <div className="w-[120px] bg-[#2c3d26]/50 rounded-[18px] py-[6px] px-[12px] mx-auto flex items-center justify-center z-25 mt-2">
+          <div className="flex flex-row items-center gap-[5px] w-[90px] h-[8px] justify-center">
             {slidesData.map((_, i) => (
               <button 
                 key={i}
                 onClick={() => handleDotClick(i)}
-                className="h-[10px] rounded-[18px] transition-all duration-300"
+                className="h-[8px] rounded-[18px] transition-all duration-300"
                 style={{
-                  width: mobileActiveIndex === i ? '44px' : '26px',
+                  width: mobileActiveIndex === i ? '36px' : '20px',
                   backgroundColor: mobileActiveIndex === i ? 'rgba(220, 255, 229, 0.85)' : 'rgba(220, 255, 229, 0.26)',
                 }}
                 aria-label={`View Slide ${i + 1}`}
