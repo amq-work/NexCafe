@@ -2,7 +2,6 @@ import React, { useEffect, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
 import { CartDrawer } from './components/cart/CartDrawer';
-import { CustomCursor } from './components/ui/CustomCursor';
 
 // Lazy loaded page components
 const Home = React.lazy(() => import('./pages/Home').then(m => ({ default: m.Home })));
@@ -70,7 +69,6 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <CustomCursor />
       <CartDrawer />
       <Suspense fallback={<RouteLoader />}>
         <AnimatedRoutes />
