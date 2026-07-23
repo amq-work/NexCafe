@@ -46,7 +46,7 @@ export function Navbar() {
       gsap.set(headerRef.current, { y: 0, opacity: 1 });
     }
     if (bottomNavRef.current) {
-      gsap.set(bottomNavRef.current, { y: 100, xPercent: -50, opacity: 0 });
+      gsap.set(bottomNavRef.current, { y: 100, opacity: 0 });
     }
   }, []);
 
@@ -66,7 +66,6 @@ export function Navbar() {
       if (bottomNavRef.current) {
         gsap.to(bottomNavRef.current, {
           y: 0,
-          xPercent: -50,
           opacity: 1,
           duration: 0.6,
           ease: 'back.out(1.4)',
@@ -88,7 +87,6 @@ export function Navbar() {
       if (bottomNavRef.current) {
         gsap.to(bottomNavRef.current, {
           y: 100,
-          xPercent: -50,
           opacity: 0,
           duration: 0.45,
           ease: 'power2.inOut',

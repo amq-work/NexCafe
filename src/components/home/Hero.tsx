@@ -609,7 +609,7 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
     {
       heading: (
         <>
-          A Symphony of<br />Melting <span className="font-bold">Artistry</span>.
+          THE SYMPHONY OF<br />MELTING <span className="font-bold">ARTISTRY</span>.
         </>
       ),
       subheading: (
@@ -625,7 +625,7 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
     {
       heading: (
         <>
-          Bold Flavors,<br />Elevated <span className="font-bold">Heritage</span>.
+          BOLD FLAVORS,<br />ELEVATED <span className="font-bold">HERITAGE</span>.
         </>
       ),
       subheading: (
@@ -641,7 +641,7 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
     {
       heading: (
         <>
-          Crisp & Golden,<br />Artisanal <span className="font-bold">Tradition</span>.
+          CRISP & GOLDEN,<br />ARTISANAL <span className="font-bold">TRADITION</span>.
         </>
       ),
       subheading: (
@@ -701,18 +701,18 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
           {/* Hero-Headings */}
           <div className="absolute left-[110px] top-[135px] w-[650px] h-[220px] z-20 pointer-events-none">
             <div ref={head0Ref} className="absolute inset-0 pointer-events-none">
-              <span className="inline-block font-serif font-medium text-[76px] leading-[0.85] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'left top' }}>
-                A Symphony of<br />Melting <span className="font-bold text-[#DCFFE5] drop-shadow-sm">Artistry</span>.
+              <span className="inline-block font-serif font-medium text-[84px] leading-[0.85] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'left top' }}>
+                THE SYMPHONY OF<br />MELTING <span className="font-bold text-[#DCFFE5] drop-shadow-sm">ARTISTRY</span>.
               </span>
             </div>
             <div ref={head1Ref} className="absolute inset-0 pointer-events-none">
-              <span className="inline-block font-serif font-medium text-[76px] leading-[0.85] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'left top' }}>
-                Bold Flavors,<br />Elevated <span className="font-bold text-[#FFDCD3] drop-shadow-sm">Heritage</span>.
+              <span className="inline-block font-serif font-medium text-[84px] leading-[0.85] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'left top' }}>
+                BOLD FLAVORS,<br />ELEVATED <span className="font-bold text-[#FFDCD3] drop-shadow-sm">HERITAGE</span>.
               </span>
             </div>
             <div ref={head2Ref} className="absolute inset-0 pointer-events-none">
-              <span className="inline-block font-serif font-medium text-[76px] leading-[0.85] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'left top' }}>
-                Crisp & Golden,<br />Artisanal <span className="font-bold text-[#FFEED3] drop-shadow-sm">Tradition</span>.
+              <span className="inline-block font-serif font-medium text-[84px] leading-[0.85] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'left top' }}>
+                CRISP & GOLDEN,<br />ARTISANAL <span className="font-bold text-[#FFEED3] drop-shadow-sm">TRADITION</span>.
               </span>
             </div>
           </div>
@@ -939,20 +939,20 @@ export function Hero({ activeIndex: propActiveIndex, onIndexChange, transitionDu
         <div className="flex flex-col flex-1 justify-center py-2 gap-4 z-20 pt-14">
           
           {/* Headings Container (Stacked Absolutely to prevent layout shift and enable GSAP) */}
-          <div className="relative w-full h-[65px] xs:h-[80px] sm:h-[95px] flex items-center justify-center">
+          <div className="relative w-full h-[75px] xs:h-[90px] sm:h-[110px] flex items-center justify-center">
             <h1 ref={mobileHead0Ref} className="absolute inset-0 text-center px-4">
-              <span className="inline-block font-serif font-medium text-[24px] xs:text-[30px] sm:text-[38px] md:text-[44px] leading-[0.95] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'top center' }}>
-                A Symphony of<br />Melting <span className="font-bold text-[#DCFFE5] drop-shadow-sm">Artistry</span>.
+              <span className="inline-block font-serif font-medium text-[28px] xs:text-[34px] sm:text-[42px] md:text-[50px] leading-[0.95] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'top center' }}>
+                THE SYMPHONY OF<br />MELTING <span className="font-bold text-[#DCFFE5] drop-shadow-sm">ARTISTRY</span>.
               </span>
             </h1>
             <h1 ref={mobileHead1Ref} className="absolute inset-0 text-center px-4">
-              <span className="inline-block font-serif font-medium text-[24px] xs:text-[30px] sm:text-[38px] md:text-[44px] leading-[0.95] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'top center' }}>
-                Bold Flavors,<br />Elevated <span className="font-bold text-[#FFDCD3] drop-shadow-sm">Heritage</span>.
+              <span className="inline-block font-serif font-medium text-[28px] xs:text-[34px] sm:text-[42px] md:text-[50px] leading-[0.95] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'top center' }}>
+                BOLD FLAVORS,<br />ELEVATED <span className="font-bold text-[#FFDCD3] drop-shadow-sm">HERITAGE</span>.
               </span>
             </h1>
             <h1 ref={mobileHead2Ref} className="absolute inset-0 text-center px-4">
-              <span className="inline-block font-serif font-medium text-[24px] xs:text-[30px] sm:text-[38px] md:text-[44px] leading-[0.95] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'top center' }}>
-                Crisp & Golden,<br />Artisanal <span className="font-bold text-[#FFEED3] drop-shadow-sm">Tradition</span>.
+              <span className="inline-block font-serif font-medium text-[28px] xs:text-[34px] sm:text-[42px] md:text-[50px] leading-[0.95] text-cream-soft tracking-normal" style={{ transform: 'scaleY(1.35) scaleX(0.92)', transformOrigin: 'top center' }}>
+                CRISP & GOLDEN,<br />ARTISANAL <span className="font-bold text-[#FFEED3] drop-shadow-sm">TRADITION</span>.
               </span>
             </h1>
           </div>

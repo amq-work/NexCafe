@@ -18,8 +18,7 @@ export const CompactNavbar = React.forwardRef<HTMLDivElement, CompactNavbarProps
     return (
       <div
         ref={ref}
-        className="fixed bottom-6 left-1/2 z-40 w-[92%] max-w-[400px] pointer-events-auto select-none"
-        style={{ transform: 'translateX(-50%)' }} // Default center alignment, GSAP handles dynamic y and xPercent
+        className="fixed bottom-6 left-0 right-0 mx-auto z-40 w-[92%] max-w-[400px] pointer-events-auto select-none"
       >
         <div className="backdrop-blur-md bg-[#182314]/90 border border-[#DCFFE5]/15 rounded-full px-5 py-3 flex items-center justify-between shadow-[0_12px_40px_rgba(0,0,0,0.5)]">
           {/* Logo Brand Link */}
