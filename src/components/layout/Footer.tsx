@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { Globe } from 'lucide-react';
 import { RESTAURANT } from '../../lib/data';
 
 export function Footer() {
@@ -64,15 +63,6 @@ export function Footer() {
             © {new Date().getFullYear()} {RESTAURANT.name}. All rights
             reserved.
           </p>
-          <a
-            href="https://digitalnexes.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Website"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#DFE7CF]/20 text-[#DFE7CF]/70 transition-colors hover:border-[#DCFFE5] hover:text-[#DCFFE5] hover:bg-[#DCFFE5]/10"
-          >
-            <Globe className="h-5 w-5" />
-          </a>
         </div>
       </div>
     </footer>

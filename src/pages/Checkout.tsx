@@ -606,7 +606,7 @@ export function Checkout() {
             >
               <div className="flex justify-center mb-5">
                 <div className="h-16 w-16 rounded-2xl bg-gradient-to-tr from-forest-deep to-forest flex items-center justify-center text-[#DCFFE5] shadow-lg">
-                  <span className="font-island font-bold text-3xl">DN</span>
+                  <span className="font-island font-bold text-3xl">AQ</span>
                 </div>
               </div>
 
@@ -614,25 +614,16 @@ export function Checkout() {
                 Portfolio Showcase
               </span>
               <h3 className="font-serif text-2xl font-bold text-forest-deep mt-2 mb-4">
-                DIGITAL NEXES
+                Aayan Qureshi
               </h3>
 
               <p className="text-sm sm:text-base text-[#1A2E1A]/80 leading-relaxed mb-8 font-sans">
-                This Website is one of the portfolio projects of <span className="font-semibold text-forest-deep">DIGITAL NEXES</span>
+                This website is one of the portfolio projects of <span className="font-semibold text-forest-deep">Aayan Qureshi</span>
               </p>
 
               <div className="flex flex-col gap-3">
                 <Button
-                  variant="glass"
-                  fullWidth
-                  onClick={() => window.open('https://www.digitalnexes.com', '_blank')}
-                >
-                  <span>Learn More</span>
-                  <ExternalLink className="h-4 w-4" />
-                </Button>
-
-                <Button
-                  variant="ghost"
+                  variant="primary"
                   fullWidth
                   onClick={() => setShowNexesPopup(false)}
                 >
