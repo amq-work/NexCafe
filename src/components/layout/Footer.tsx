@@ -22,16 +22,7 @@ export function Footer() {
               Portfolio Project
             </h3>
             <p className="mt-4 text-sm leading-relaxed text-[#DFE7CF]/70">
-              This is a digital platform designed and developed as a project of the Digital Nexes Portfolio.
-            </p>
-            <p className="mt-3">
-              <a
-                href="/NexCafe_Restaurant_Platform_Case_Study.pdf"
-                download="NexCafe_Restaurant_Platform_Case_Study.pdf"
-                className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-[#AAD08D] hover:text-[#DCFFE5] transition-colors border-b border-[#AAD08D]/40 pb-0.5"
-              >
-                View Case Study
-              </a>
+              Aayan Qureshi has made this project for my personal portfolio projects showcase.
             </p>
           </div>
 
